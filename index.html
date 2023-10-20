@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>The Duke of Quessex</title>
+    <style>
+
+        body {
+            min-height: 100vh;
+            background-color: #2c3e50; /* Donkere blauwgrijze achtergrond */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #1a1a1a; /* Donkergrijze achtergrond voor header */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Donkergrijze achtergrond voor de navigatiebalk */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #ffffff; /* Witte tekstkleur */
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px; /* Meer ruimte tussen links */
+            padding: 10px 0;
+            border-bottom: 3px solid transparent; /* Onderstreping toevoegen */
+            transition: border-bottom 0.3s; /* Overgang voor de onderstreping */
+        }
+
+        .navbar a:hover {
+            border-bottom: 3px solid #be9e44; /* Gouden onderstreping voor hover */
+        }
+
+        .container {
+            background-color: #ffffff; /* Witte achtergrond voor inhoud */
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            flex: 1; /* Neem alle beschikbare ruimte in beslag */
+        }
+
+        h2 {
+            color: #1a1a1a; /* Donkergrijze tekstkleur */
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Donkergrijze achtergrond voor footer */
+            color: #ffffff; /* Witte tekstkleur voor footer */
+            text-align: center;
+            padding: 10px 0;
+        }
+        .ronde-afbeelding {
+            width: auto;
+            height: 100px;
+            border-radius: 50%;
+            margin: 10px; /* Voeg wat ruimte tussen de afbeeldingen toe */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="duke.png" alt="The Duke of Quessex Logo">
+        <h1>The Duke of Quessex</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="contact.html" class="nav-link">Reservation</a>
+    </div>
+
+    <div class="container">
+        <h2>About us!</h2>
+        <p> Welcome to The Duke of Quessex, your welcoming and stylish pub. We offer an extensive selection of drinks and culinary dishes in an elegant and relaxing environment. Our professional and friendly staff are ready to welcome you.</p>
+        <!-- Afbeeldingen voor "Over Ons" -->
+        <div class="image-gallery">
+            <img src="mandy2.png" alt="Mandy" class="ronde-afbeelding">
+            <img src="nik2.png" alt="Nikolay" class="ronde-afbeelding">
+            <img src="shaked.png" alt="Shaked" class="ronde-afbeelding">
+            <img src="artem2.png" alt="Artem" class="ronde-afbeelding">
+            <img src="francis3.png" alt="Francis" class="ronde-afbeelding">
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Menu Specials</h2>
+        <p>Check out the rest of our menu for a diverse selection of high-quality drinks and dishes, including our special meals.</p>
+
+        <!-- Speciale maaltijdenlijst -->
+        <ul class="special-meals">
+                <h2>Burger Extravaganza</h2>
+                   <li>
+                       <p>Indulge in our mouthwatering pub burger served with crispy fries and a fresh salad for only <strong>$12.99</strong>.</p>
+                       <p><strong>Promotion:</strong> "Burger & Beer Combo" - Order this meal and get a complimentary draft craft beer.</p>
+                   </li>
+                <h2>Fish & Chips Friday</h2>
+                    <li>
+                        <p>Enjoy a delicious breaded cod fillet served with golden-brown fries and homemade tartar sauce for just <strong>$14.99</strong>.</p>
+                        <p><strong>Promotion:</strong> "Happy Fry-Hour" - Join us between 5:00 PM and 7:00 PM on Fridays and receive a free glass of house wine or a soft drink with your meal.</p>
+                    </li>
+                <h2>Burger Extravaganza</h2>
+                    <li>
+                        <p>Indulge in our mouthwatering pub burger served with crispy fries and a fresh salad for only <strong>$12.99</strong>.</p>
+                        <p><strong>Promotion:</strong> "Burger & Beer Combo" - Order this meal and get a complimentary draft craft beer.</p>
+                    </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Events</h2>
+        <p> Join us for unforgettable nights of entertainment! Whether you're belting out your favorite tunes at Karaoke Night or putting your knowledge to the test at Pub Quiz Trivia Night, we've got something special for everyone. Gather your friends, enjoy great food and drinks, and create lasting memories at The Pub. See you there!</p>
+
+        <h2>Welcome to Karaoke Night!</h2>
+    <section id="event-details">
+        <h4>Event Details</h4>
+        <p>Join us for a fun-filled Karaoke Night where you can showcase your singing talent and have a blast.</p>
+        <p>Date: Every Friday Night</p>
+        <p>Time: 8:00 PM - 11:00 PM</p>
+        <p>Location: The Pub's Karaoke Lounge</p>
+    </section>
+
+    <section id="prizes">
+        <h2>Prizes</h2>
+        <p>Prizes will be awarded for the best performances of the night. Sing your heart out and win exciting rewards!</p>
+    </section>
+
+    <section id="how-to-participate">
+        <h2>How to Participate</h2>
+        <p>1. Sign up at the registration desk on the night of the event.</p>
+        <p>2. Choose your favorite songs from our extensive karaoke library.</p>
+        <p>3. Take the stage and give it your all!</p>
+    </section>
+
+        <h2>Test Your Knowledge at Pub Quiz Trivia Night!</h2>
+
+    <section id="event-details">
+        <h4>Event Details</h4>
+        <p>Join us for a night of brain-teasing questions and friendly competition at our Pub Quiz Trivia Night.</p>
+        <p>Date: Every Wednesday Evening</p>
+        <p>Time: 7:30 PM - 10:00 PM</p>
+        <p>Location: The Pub's Trivia Lounge</p>
+    </section>
+
+    <section id="prizes">
+        <h2>Prizes</h2>
+        <p>Exciting prizes await the winning teams. Test your knowledge and win great rewards!</p>
+    </section>
+
+    <section id="how-to-participate">
+        <h2>How to Participate</h2>
+        <p>1. Form a team with your friends (usually 2-6 people per team).</p>
+        <p>2. Register your team on the night of the event.</p>
+        <p>3. Answer trivia questions across various categories to earn points.</p>
+    </section>
+    </div>
+
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Do you have any questions, would you like to make a reservation, or do you have any comments? Feel free to contact us. Our team is at your service.</p>
+        <span style="color: black;">E-mail:</span> <a href="mailto:info@dukeofquessex.com" style="color: #be9e44;">info@dukeofquessex.com</a><br>
+        <span style="color: black;">Telefoon:</span> <a href="tel:+123456789" style="color: #be9e44;">+123 456 789</a><br>
+        <span style="color: black;">Adres:</span> <a style="color: #be9e44;">Charlotte St, London, W1T 4PZ</a>
+    </div>
+
+    <div class="container">
+        <h2>Opening hours</h2>
+        <p>Our pub is open Monday to Thursday from 4:00 PM to 1:00 AM and Friday and Saturday from 4:00 PM to 2:00 AM. We are closed on Sundays. Come by and enjoy delicious drinks and a cozy atmosphere!</p><br>
+    </div>
+
+    <footer>
+        &copy; 2023 The Duke of Quessex - All rights reserved
+    </footer>
+</body>
+</html>

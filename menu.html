@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+    <title>The Duke of Quessex</title>
+    <style>
+         body {
+            min-height: 100vh;
+            background-color: #2c3e50; /* Donkere blauwgrijze achtergrond */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #1a1a1a; /* Donkergrijze achtergrond voor header */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .navbar {
+            background-color: #1a1a1a; /* Donkergrijze achtergrond voor de navigatiebalk */
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #ffffff; /* Witte tekstkleur */
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px; /* Meer ruimte tussen links */
+            padding: 10px 0;
+            border-bottom: 3px solid transparent; /* Onderstreping toevoegen */
+            transition: border-bottom 0.3s; /* Overgang voor de onderstreping */
+        }
+
+        .navbar a:hover {
+            border-bottom: 3px solid #be9e44; /* Gouden onderstreping voor hover */
+        }
+
+        .container {
+            background-color: #ffffff; /* Witte achtergrond voor inhoud */
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            flex: 1; /* Neem alle beschikbare ruimte in beslag */
+        }
+
+        h2 {
+            color: #1a1a1a; /* Donkergrijze tekstkleur */
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: square;
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #1a1a1a; /* Donkergrijze achtergrond voor footer */
+            color: #ffffff; /* Witte tekstkleur voor footer */
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* ... (Bestaande CSS-stijlen blijven hetzelfde) */
+
+        .menu-card {
+            background-color: #f7f3eb; /* Zachte crèmekleurige achtergrond voor de menukaart */
+            padding: 20px;
+            border: 2px solid #be9e44; /* Gouden rand rond de menukaart */
+            border-radius: 10px;
+            text-align: left;
+            width: 90%; /* Maakt de menukaart breder en neemt meer ruimte van de pagina in */
+            margin: 0 auto; /* Centreert de menukaart op de pagina */
+            background-image: url('menu_background.jpg'); /* Voegt een achtergrondafbeelding toe */
+            background-size: cover; /* Schaalt de achtergrondafbeelding om de hele menukaart te bedekken */
+            background-repeat: no-repeat;
+        }
+
+        .menu-section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu-section h3 {
+            color: #1a1a1a; /* Donkergrijze tekstkleur voor sectiekoppen */
+            font-size: 24px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Lichtwitte achtergrond voor menu-items */
+            padding: 10px; /* Voegt wat ruimte rond de menu-items toe */
+        }
+
+        .menu-item img {
+            max-width: 100px; /* Bepaalt de maximale breedte van de afbeeldingen */
+            margin-right: 10px; /* Voegt wat ruimte tussen de afbeelding en tekst toe */
+        }
+
+        .menu-item-name {
+            flex-grow: 1; /* Hiermee neemt de naam alle beschikbare ruimte in beslag, zodat prijzen mooi uitgelijnd zijn */
+            font-size: 18px;
+        }
+
+        .menu-item-price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            font-size: 18px;
+            background-color: rgba(255, 255, 255, 0.7); /* Lichtwitte achtergrond voor menu-items */
+            padding: 10px; /* Voegt wat ruimte rond de menu-items toe */
+        }
+        .menu-section {
+        margin: 20px 0;
+    }
+
+    .menu-section h3 {
+        font-size: 24px;
+    }
+
+    .menu-section ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 20px;
+        padding: 0;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+
+    .menu-item {
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #f9f9f9;
+    }
+
+    .menu-item img {
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    .menu-item-name {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .menu-item-price {
+        font-size: 16px;
+        color: #be9e44;
+    }
+
+    </style>
+    <!-- Voeg de benodigde CSS voor lettertypen toe, zoals eerder uitgelegd -->
+    <!-- ... (Andere head-informatie blijft hetzelfde) -->
+</head>
+<body>
+    <header>
+        <img src="duke.png" alt="The Duke of Quessex Logo">
+        <h1>The Duke of Quessex</h1>
+    </header>
+
+    <div class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="menu.html" class="nav-link">Menu</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="contact.html" class="nav-link">Reservation</a>
+    </div>
+
+<div class="container">
+    <h2>Menukaart</h2>
+
+    <!-- Menukaart met secties voor voorgerechten, hoofdgerechten, desserts en dranken -->
+    <div class="menu-card">
+        <!-- Voorgerechten -->
+        <section class="menu-section">
+            <h3>Appetizers</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Prawn Cocktail</span>
+                    <span class="menu-item-price">€9.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Tomato Soup</span>
+                    <span class="menu-item-price">€6.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Caprese Salad</span>
+                    <span class="menu-item-price">€8.75</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Mussels in Garlic Sauce</span>
+                    <span class="menu-item-price">€10.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Bacon-Wrapped Dates</span>
+                    <span class="menu-item-price">€7.25</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Beef Carpaccio</span>
+                    <span class="menu-item-price">€8.95</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Hoofdgerechten -->
+        <section class="menu-section">
+            <h3>Main Course</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Steak with Fries</span>
+                    <span class="menu-item-price">€17.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Salmon Fillet with Lemon Butter Sauce</span>
+                    <span class="menu-item-price">€15.75</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Fish and Chips</span>
+                    <span class="menu-item-price">€14.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Chicken Parmesan with Pasta</span>
+                    <span class="menu-item-price">€12.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Vegetarian Burger with Avocado</span>
+                    <span class="menu-item-price">€11.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">"Pork Ribs with Sweet Potato Fries</span>
+                    <span class="menu-item-price">€16.75</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Nagerechten -->
+        <section class="menu-section">
+            <h3>Nagerechten</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Apple Pie</span>
+                    <span class="menu-item-price">€5.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Chocolate Mousse</span>
+                    <span class="menu-item-price">€6.25</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Tiramisu</span>
+                    <span class="menu-item-price">€7.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Cheesecake with Raspberry Sauce</span>
+                    <span class="menu-item-price">€6.75</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Panna Cotta with Strawberries</span>
+                    <span class="menu-item-price">€6.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="eten.svg" width="50" height= auto>
+                    <span class="menu-item-name">Crème Brûlée</span>
+                    <span class="menu-item-price">€6.95</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Dranken -->
+        <section class="menu-section">
+            <h3>Dranken</h3>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <img src="bier.svg" width="50" height= auto>
+                    <span class = "menu-item-name">Poncibiera beer</span>
+                    <span class="menu-item-price">€5.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="bier.svg" width="50" height= auto>
+                    <span class="menu-item-name">Corona beer</span>
+                    <span class="menu-item-price">€6.00</span>
+                </li>
+                <li class="menu-item">
+                    <img src="wijn.svg" width="50" height= auto>
+                    <span class="menu-item-name">Wine each glass</span>
+                    <span class="menu-item-price">From €5.95</span>
+                </li>
+                <li class="menu-item">
+                    <img src="wijn.svg" width="50" height= auto>
+                    <span class="menu-item-name">Cocktails</span>
+                    <span class="menu-item-price">From €7.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="fris.svg" width="50" height= auto>
+                    <span class="menu-item-name">Soda</span>
+                    <span class="menu-item-price">€2.50</span>
+                </li>
+                <li class="menu-item">
+                    <img src="koffie.svg" width="50" height= auto>
+                    <span class="menu-item-name">Irish coffee</span>
+                    <span class="menu-item-price">€7.25</span>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+    <footer>
+        &copy; 2023 The Duke of Quessex - All rights reserved
+    </footer>
+</body>
+</html>
